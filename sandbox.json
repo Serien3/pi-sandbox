@@ -20,26 +20,31 @@
   },
   "filesystem": {
     "denyRead": [
-      "/Users"
+      "~/.ssh",
+      "~/.aws",
+      "~/.gnupg"
     ],
     "allowRead": [
       ".",
-      "~/projects",
       "~/.config",
-      "~/.cargo",
       "~/.local",
-      "~/Library",
-      "~/.cache",
-      "/Applications/Google Chrome.app",
-      "/System/Volumes/Data/Applications/Google Chrome.app"
+      "/usr",
+      "/opt",
+      "/etc",
+      "/var/cache",
+      "/tmp"
     ],
     "allowWrite": [
+      "~",
       ".",
       "/tmp",
       "~/.pi/",
+      "~/.npm",
       "~/.cache/uv",
+      "~/.cache/pip",
       "~/.rustup",
       "~/.agent-browser",
+      "~/.config/google-chrome",
       "~/Library/Application Support/Google/Chrome",
       "~/Library/Application Support/Google/Chrome for Testing/Crashpad"
     ],
@@ -47,7 +52,15 @@
       ".env",
       ".env.*",
       "*.pem",
-      "*.key"
+      "*.key",
+      "~/.ssh",
+      "~/.aws",
+      "~/.gnupg",
+      "~/.bashrc",
+      "~/.profile",
+      "~/.zshrc",
+      "~/.pi/agent/",
+      ".pi/"
     ]
   }
 }
