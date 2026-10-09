@@ -165,7 +165,7 @@ export function supportsNodeEnvProxy(version: string): boolean {
 
 export function extractBlockedWritePath(output: string): string | null {
   const match = output.match(
-    /(?:\/bin\/bash|bash|sh): (?:line \d: )?(\/[^\s:]+): Operation not permitted/,
+    /(?:\/bin\/bash|bash|sh): (?:line \d: )?(\/[^\s:]+): (?:Operation not permitted|Read-only file system)/,
   );
   return match ? match[1] : null;
 }
